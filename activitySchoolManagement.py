@@ -3,5 +3,8 @@ class Person:
         self.name = name
         self.age = age
 
-    def display_info(self):
-        print(f"Name: {self.name}, Age: {self.age}")
+        def get_age(self):
+            return self.age
+  
+person1 = Person("Lina", 20)
+print(f"Name: {person1.name}, Age: {person1.get_age()}")
